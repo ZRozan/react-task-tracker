@@ -1,8 +1,11 @@
 import { useState } from "react";
 import Header from "./Components/Header";
 import Tasks from "./Components/Tasks";
+import AddTask from "./Components/AddTask";
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false);
+
   const [tasks, setTask] = useState([
     {
       id: 1,
@@ -23,6 +26,12 @@ function App() {
       reminder: false,
     },
   ]);
+
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 10000) + 1;
+    const newTask = { id, ...task };
+    setTask([...tasks, newTask]);
+  };
 
   const deleteTask = (id) => {
     setTask(tasks.filter((task) => task.id !== id));
