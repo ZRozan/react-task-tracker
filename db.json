@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "tasks": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "text": "Doctors Appointment",
+      "day": "Feb 5 at 2:30pm",
+      "reminder": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "text": "Movies",
+      "day": "Feb 7 at 8pm",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "Arcade Day",
+      "day": "Feb 20 at 1:30pm",
+      "reminder": false
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
