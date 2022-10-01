@@ -18,8 +18,6 @@ function App() {
     };
 
     getTasks();
-
-    fetchTasks();
   }, []);
 
   const fetchTasks = async () => {
